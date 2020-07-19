@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4ced5c3826.js" crossorigin="anonymous"></script>
+    <link href="signup.css" rel="stylesheet" type="text/css"/>
+    <link href="inputs.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="script.js"></script>
+
+    <style> 
+      input[type=submit] {
+        outline:none;
+        border: 2px white solid;
+        padding:10px;
+        color: white;
+        background-color: #e3d26f;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        margin-top: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 11pt;
+      }
+      input {
+        font-family: 'Open Sans', sans-serif;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="splash-header">
+      <img href="./index.html" id="logo" onclick="window.location.href ='./index.html'" src="logo.png" style:"float:left" alt="cover to cover"></img>
+    </div>
+    <div id="main">
+      <div id="border">
+      <h2>Create an Account</h2>
+      <form onsubmit="window.location.href = './Quiz.html'; return false;">
+        <input type="text" required placeholder="Name" id="input-signup">
+        <br><br>
+        <input type="text" required placeholder="Username" id="input-signup">
+        <br><br>
+        <input type="text" required placeholder="Password" id="input-signup">
+        <br><br>
+        <input type="number" required placeholder="Age" id="input-signup">
+        <br><br>
+        <input type="email" required placeholder="Parent's email" id="input-signup">
+        <br><br>
+        <input type="submit" required value="Sign up!">
+      </form>
+      </div>
+    </div>
+  </body>
+</html>

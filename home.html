@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="profile.css" rel="stylesheet" type="text/css"/>
+    <link href="inputs.css" rel="stylesheet" type="text/css"/>
+    <link href="home.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="reading-log.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <style>
+      input {
+          outline:none;
+          border: 1px #e0e0e0 solid;
+          padding:10px;
+          background-color: white;
+          border-radius: 5px;
+          margin-bottom: 30px;
+          margin-top: 5px;
+          text-decoration: none;
+          font-family: 'Open Sans', sans-serif;
+        }
+      input[type=submit] {
+          outline:none;
+          border: 2px white solid;
+          padding:10px;
+          color: white;
+          background-color: #7dccc5;
+          border-radius: 5px;
+          margin-bottom: 30px;
+          margin-top: 9px;
+          text-decoration: none;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          margin-left: 15px;
+        }
+      </style>
+  </head>
+  <body>
+    
+    <div style="float:right; padding-top:10px; padding-right: 10px; z-index:500;">
+      <a href="/profile.html"><img src="fox.png" style="width:60px;"></a>
+    </div>
+    <div style="float:right; padding-top:30px; padding-right: 10px">
+      My Profile 
+    </div>
+
+     <div id="welcome"> 
+        <a href='/index.html'><img id='mini-logo' src='/mini-logo.png'></a>
+        Hey, Sarah!
+
+        <div style="float:right; z-index:200; padding-right: 30px;">
+          <a href="/profile.html"><img src="fox.png" style="width:60px;"></a>
+        </div>
+      </div>
+
+    <div id="left-panel">
+      <div id="progress">
+        <p>You've read a total of...</p>
+        <h2 id="pages-read">1568</h2> pages
+        <p>Amazing work, keep it up!</p>
+      </div>
+
+      <div id="log">
+        <h3>Add a new entry</h3>
+
+        <form action="home.html" onsubmit="addEntry(); return false;">
+          <input type="text" name="title" id="title" placeholder="Book title" class="entry-input">
+          <br>
+          <input type="number" name="number-pages" id="number-pages" placeholder="Number of pages I read" class="entry-input">
+          <br>
+          <input type="number" name="end-page" id="end-page" placeholder="Page I ended on" class="entry-input">
+          <br>
+          <input type="number" name="minutes" id="minutes" placeholder="Minutes I spent reading" class="entry-input">
+          <br>
+          <input type="submit" value="Submit" class="entry-input">
+        </form>
+      </div>
+
+      <div id="entry-holder"></div>
+
+      <div id="achievements-home">
+        <h2>Achievements</h2>
+        <img src="onebook.png" id="ach">
+        <img src="goal.png" id="ach">
+      </div>
+    </div>
+
+    <div id="right-panel">
+      <div style="padding-left: 30px">
+        <div id="box"><h2>My Reading Progress</h2></div>
+        <div id="book">
+          <h3>Harry Potter and <br>the Chamber of Secrets</h3>
+          <p>30%</p>
+          <img src="orange_therm.png" alt="orange thermometer" style="width:200px;">
+        </div>
+
+        <div id="book">
+          <h3>Harry Potter and <br>the Sorcerer's Stone</h3>
+          <p>100%</p>
+          <img src="blue_therm.png" alt="blue thermometer" style="width:200px;">
+        </div>
+
+        <div id="book">
+          <h3>A Wrinkle in Time</h3>
+          <p>100%</p>
+          <img src="blue_therm.png" alt="blue thermometer" style="width:200px;">
+        </div>
+
+        <div id="book">
+          <h3>Charlotte's Web</h3>
+          <p>100%</p>
+          <img src="blue_therm.png" alt="blue thermometer" style="width:200px;">
+        </div>
+      </div>
+    </div>
+    <!-- <div id="footer">made with &hearts; by team one &nbsp;</div> -->
+  </body>
+</html>
