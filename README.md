@@ -3,3 +3,6 @@ Cover-to-Cover is a free, personalized reading journal for K-8 readers. This pro
 for motivating children and young adults to read. With a free account, children and young-adults can track their progress, earn motivating achievements, and get 
 personalized book recommendations to keep the pages turning.
 
+## Link to our site!
+https://covertocover.sannasymer1.repl.co/
+
