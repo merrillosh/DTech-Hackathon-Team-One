@@ -6,3 +6,5 @@ personalized book recommendations to keep the pages turning.
 ## Link to our site!
 https://covertocover.sannasymer1.repl.co/
 
+## Link to our presentation!
+https://youtu.be/mXESH-bYxqQ
